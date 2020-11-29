@@ -1,0 +1,49 @@
+.quote-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 50px;
+    color: white;
+    cursor: default;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.411) 100%);
+}
+
+.quote-container h3 {
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.733);
+    max-width: 80%;
+    font-size: 24px;
+    margin: auto;
+    font-weight: 400;
+    position: relative;
+    z-index: 1;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.897);
+    display: inline-block;
+    transition: 0.7s ease;
+}
+
+.quote-container h3::before, .quote-container h3::after {
+    content: '“';
+    top: -20px;
+    left: -20px;
+    color: rgba(255, 255, 255, 0.404);
+    font-size: 80px;
+    position: absolute;
+}
+
+.quote-container h3::after {
+    content: '”';
+    left: auto;
+    right: -20px;
+}
+
+.quote-container p {
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.815);
+    margin: 0;
+    padding-top: 2px;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.795);
+    transition: 0.7s ease;
+}
